@@ -1,0 +1,401 @@
+header{
+	padding: 1em;
+	background-color: black;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	z-index: 3;
+  
+ background-size: 
+ 
+  background-attachment: fixed;
+	}
+.header{
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  background-image: url("beautiful-lights.gif");
+  
+
+}
+table{
+ background-color:rgba(0,0,0,0);
+  color: #ffffff;
+  padding: 10px;
+  margin: 12px;
+
+}
+.table{
+  background-color: gray;
+  color: #000000;
+  padding: 7px;
+  margin:5px;
+  border-width: 1px;
+  border-radius: 1px;
+}
+body{ 
+ 	background-position: right;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+    position: absolute;   
+
+}
+
+h1{
+	text-align: center;
+	margin: 0;
+	font-family: lemon;
+	font-size: 40px;
+	font-weight: bold;
+	color: #c2a90f;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  float: left;
+  position: sticky;
+
+}
+
+.nav li a {
+  display: block;
+  color: #54ECC4;
+  text-align: center;
+  font-size: 26px;
+  padding: 14px 126px;
+  font-family: Arial;
+  text-decoration: none;
+  font-weight:bold;
+}
+.nav li p{
+  font-size: 12px;
+}
+.nav p{
+  color: white;
+}
+.nav li a:hover {
+  background-color: #ADFCFE;
+}
+
+.sidebar ul {
+	top: 190px;
+	bottom: 0px;
+	left: 0;
+	position: fixed;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 760px;
+	width: 150px;
+	background-color: #00008b;
+	z-index: 2;
+}
+
+.sidebar li a {
+  display: block; 
+  color: #c291db ;
+  padding: 20px 16px;
+  text-decoration: none;
+  text-decoration-color: black;
+}
+/* Change the link color on hover */
+.sidebar li a:hover {
+  background-color: #555;
+  color: white;
+}
+.sidebar li {
+	float: center;
+}
+
+.sosmed ul {
+	top: 190px;
+	right: 0;
+	position: fixed;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 200px;
+	width: 85px;
+}
+.sosmed li {
+  float: center;
+}
+.sosmed li a {
+	display: block;
+  	color: white;
+  	padding: 20px 20px;
+  	text-decoration: none;
+}
+
+.sosmed a:hover {
+  background-color: #ADFCFE;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #B0D9F7;
+  color: white;
+}
+
+.google {
+  background: #E3695A;
+  color: white;
+}
+
+.instagram {
+  background: #E4405F;
+  color: white;
+}
+
+.youtube {
+  background: #E03433;
+  color: white;
+}
+.content {
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1;
+margin: 200px 200px 200px 210px;
+border-left: 1px solid gray;
+padding: 1em;
+overflow: hidden;
+}
+
+article {
+	clear: both;
+	overflow: hidden;
+	border-bottom: 5px solid #eee;
+  width: 650px;
+}
+
+hgroup {
+	margin-top: 40px;
+}
+
+figure {
+	float: left;
+	width: 290px;
+	height: 220px;
+	padding: 5px;
+	margin: 20px;
+}
+  
+figcaption {
+	font-size: 90%;
+	text-align: center;
+}
+
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 0px 350px;
+    border-left: 5px solid #eee;
+}
+
+.content ol {
+	text-align: justify;
+	margin-left: 320px;
+}
+
+.Mesin p {
+	text-align: justify;
+	margin-left: 342px;
+}
+.Informatika h4, h5 {
+	text-align: justify;
+	margin-left: 342px;
+}
+
+.Arsitektur h4, h5 {
+	text-align: justify;
+	margin-left: 342px;
+}
+
+footer {
+						padding:1px;
+                        color:black;
+                        font-weight: bold;
+                        text-align:center;
+                        right:0;
+                        left:0;
+                        position:absolute;
+                        z-index:1;
+                        background-color: rgba(255,255,255,1);
+                        height: 110px;
+                        float: bottom;
+                    }
+//
+// Variables
+// ----------------------
+
+@gray: #333;
+@gray-light: #aaa;
+@gray-lighter: #eee;
+@space: 40px;
+@blue: #428bca;
+@blue-dark: darken(@blue, 5%);
+
+// Mixin for transition/transform
+.translate(@x; @y) {
+  -webkit-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y); // IE9+
+          transform: translate(@x, @y);
+}
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
+}
+.transition-transform(@transition) {
+  -webkit-transition: -webkit-transform @transition;
+     -moz-transition: -moz-transform @transition;
+       -o-transition: -o-transform @transition;
+          transition: transform @transition;
+}
+
+//
+// Body
+// ----------------------
+
+body{
+  color: @gray;
+  font-family: 'Helvetica', arial;
+  height: 80em;
+}
+
+.wrap{
+  padding: @space;
+  text-align: center;
+}
+
+
+
+
+//
+// Btn 
+// ----------------------
+
+.btn{
+  background: @blue;
+  border: @blue-dark solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color .1s ease;
+ /* top: 40em;*/
+  
+  &:hover{
+    background: @blue-dark;
+  }
+  
+  &.btn-big{
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+  }
+  
+}
+
+.btn-close{
+  color: @gray-light;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute; right: 5px; top: 0;
+  
+  &:hover{
+     color: darken(@gray-light, 10%);
+  }
+  
+}
+
+//
+// Modal
+// ----------------------
+
+.modal{
+  
+   
+  // This is modal bg
+  &:before{
+    content: ""; 
+    display: none;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: 10;
+  }
+  
+  &:target{
+     
+    // Active animate in modal
+    &:before{
+      display: block;
+    }  
+    .modal-dialog{
+      .translate(0, 0); 
+      top: 20%;  
+    }
+     
+  }
+  
+}
+
+// Modal Dialog
+// ----------------------
+
+.modal-dialog{
+  background: #fefefe;
+  border: @gray solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed; 
+  left: 50%; 
+  top: -100%;  
+  z-index: 11; 
+  width: 360px;
+  .translate(0, -500%);
+  .transition-transform(~"0.3s ease-out");
+}
+
+.modal-body{
+  padding: @space/2;
+}
+
+.modal-header,
+.modal-footer{
+  padding: @space/4 @space/2;
+}
+
+.modal-header{
+  border-bottom: @gray-lighter solid 1px;
+  
+  h2{
+    font-size: 20px;
+  }
+  
+}
+
+.modal-footer{
+  border-top: @gray-lighter solid 1px;
+  text-align: right;
+}
+
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+  display: none; 
+}

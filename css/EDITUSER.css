@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background: #1F2739;
+}
+h1 {
+  margin: 0 0 1.25em;
+  font-family: lemon;
+  text-transform: uppercase;
+  background: linear-gradient(to right, purple 30%, yellow 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: yellow;
+}
+
+.button {
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    background: #35b88f;
+    color: #fff;
+    cursor: pointer;
+    font-family: lemon;
+    font-size: 24px;
+    outline: 0;
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+    border-radius: 3em;
+    font-weight: 400px;
+    margin-left: 30px;
+}
+
+
+.button5 {
+    background-color: white;
+      color: purple;
+} 
+.button5:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: yellow;
+}
