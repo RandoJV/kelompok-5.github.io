@@ -1,0 +1,29 @@
+
+
+.topnav {
+	position: relative;
+	z-index: 2;
+  overflow: hidden;
+  background-color:  rgba(0, 0, 0, 0.001);
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: xperia;
+  border-radius: 25%;
+}
+
+.topnav a:hover {
+  background-color: rgba(255, 248, 66, 0.5);
+  color: #800080;
+}
+
+.topnav a.active {
+  background-color: rgba(128, 0, 128, 0.5);
+  color: #FFF842;
+}
